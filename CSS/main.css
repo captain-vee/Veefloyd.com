@@ -1,0 +1,260 @@
+ /*** General info
+
+ Pallette:
+ Black #000000
+ Grey #8b94aa
+ Accent Blue #0F21AF
+ Main Blue #0066cc
+ White #FFFFFF
+ Background grey: #3d3d3d
+ Font Color: #333333
+
+Index
+
+1.0 General
+2.0 Buttons
+3.0 Forms
+4.0 Home Page
+Media Queries
+
+ ****/
+
+ /*** 1.0 General ****/
+
+
+
+body {
+
+  width:100%;
+  max-width:100%;
+  font-family: "ubuntu", sans-serif;
+  color:#333333;
+  margin:0;
+  padding:0;
+  margin-top:0px;
+  box-sizing:border-box;
+}
+
+.content {
+  margin: 5px 15px;
+}
+
+nav {
+  position:fixed;
+  z-index:3000;
+  width:100%;
+  margin: 0px;
+  text-align:center;
+  background-color: #fdfdfd;
+  padding:none;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index:1000;
+  border-bottom: 1px #0066cc solid;
+}
+
+
+
+nav ul li {
+  list-style: none;
+  display:inline-block;
+  font-weight:300;
+
+}
+
+
+nav ul li a {
+  color:#0066cc;
+}
+
+nav ul li a:visited {
+  color:#0066cc;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #0066cc;
+}
+
+nav ul li a:active {
+  font-size:20pt;
+}
+
+nav ul li img {
+  height:42px;
+
+}
+
+
+nav ul {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  margin: 10px 0 10px 0;
+  padding-left:none;
+}
+
+nav ul li {
+  margin: 0 2px 0 2px;
+  padding: 0 2px 0 2px;
+}
+
+/*Links*/
+ a {
+   text-decoration:none ;
+ }
+
+.center {
+  text-align: center;
+}
+
+
+.section-head {
+  color: #0066cc;
+  font-size:48px;
+  margin-top:100px;
+  text-align:center;
+}
+
+
+/*** 1.1 Home ****/
+#hero_home {
+  z-index:-1000;
+  max-width:100%;
+  background: url('../img/veefloydwebdeveloperhero3.png') no-repeat top center fixed;
+  height:584px;
+  /*max-height:50%;*/
+  color: #fdfdfd;
+  text-align: center;
+  width:100%;
+  padding:none;
+  margin:none;
+
+
+  }
+
+#hero-text {
+  position:fixed;
+  height:300px;
+  width:100%;
+  top:50%;
+  left:50%;
+  margin-top: -150px;
+  margin-left:-50%;
+}
+
+#hero-text p {
+  font-size:82px;
+  font-weight:300;
+}
+
+#hero-text h4 {
+
+  font-weight:300;
+}
+
+.content{
+  position:relative;
+  z-index:2000;
+}
+
+#knowledge-gallery {
+  max-width:80%;
+  margin: 5px auto;
+  text-align: center;
+}
+
+.circle {
+  display:table;
+  margin:10px auto;
+}
+
+.language {
+  display:table-cell;
+  vertical-align:middle;
+  height:80px;
+  width:80px;
+  border-radius:100%;
+  background-color: #0066cc;
+  text-align:center;
+  color:#fdfdfd;
+}
+
+
+/*** 1.2 About ***/
+
+.social-buttons{
+  text-align:center;
+}
+
+.social-contact{
+  height:32px;
+  padding:5px;
+
+}
+
+#email-logo{
+  height:20px;
+  width:32px;
+  padding: 5px 5px 12px 5px;
+}
+
+
+
+/********* 2.0 Buttons **************/
+
+.button {
+  padding: 10px 10px;
+  color: #FFFFFF;
+  border: 2px;
+  border-radius: 5px ;
+  border-style: solid;
+
+}
+
+.alpha-button {
+  background-color: #4885ed;
+  min-width:150px;
+  max-width: 300px;
+  margin:10px 10px;
+  opacity:0.9;
+  border-color:#4885ed;
+}
+
+
+.alpha-button:hover {
+  background-color:#FFFFFF;
+  color:#4885ed;
+
+}
+
+.beta-button {
+  padding: 10px 10px;
+  background-color:#8F959A;
+  color: #FFFFFF;
+  border: 2px;
+  border-color:#8F959A;
+  border-radius: 5px ;
+  border-style: solid;
+  opacity:0.9;
+}
+
+.beta-button:hover {
+  color:#8F959A;
+  background-color:#FFFFFF;
+}
+
+.small {
+  font-size:14pt;
+}
+
+.medium {
+  font-size:16pt;
+}
+
+.large {
+  font-size:18pt;
+}
+
+
+/***Media Queries ***/
